@@ -17,3 +17,11 @@ We would like you to create (and deploy) a web API that enables a user to access
 1. Do I need to host it somewhere?: Yes. We would like to try using it. It will only need to be up for a week.
 2. Do I need to build a client?: No, we’re only after an API.
 3. Do you need the code?: Yes please, we would like to review it. GitHub or GitLab.
+
+# Dependancies
+
+1. Node
+
+## Usage
+
+1. run `npm install`
