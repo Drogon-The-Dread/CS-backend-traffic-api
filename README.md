@@ -26,3 +26,7 @@ We would like you to create (and deploy) a web API that enables a user to access
 ## Usage
 
 1. run `npm run build`
+
+### Tests
+
+1. run `npm run test`

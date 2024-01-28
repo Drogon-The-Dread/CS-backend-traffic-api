@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "build": "docker build -t traffic-postgres:latest . && npm i",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
