@@ -21,7 +21,8 @@ We would like you to create (and deploy) a web API that enables a user to access
 # Dependancies
 
 1. Node
+2. Docker
 
 ## Usage
 
-1. run `npm install`
+1. run `npm run build`
