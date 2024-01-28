@@ -30,4 +30,24 @@ We would like you to create (and deploy) a web API that enables a user to access
 
 ### Tests
 
-1. run `npm run test`
+1. run the docker for the DB `docker run --rm -d -p 5432:5432 traffic-postgres:latest `
+2. run `npm run test`
+
+# Endpoints
+
+1. Health - returns the status if API is online
+    - `localhost:3080/health`
+2. Data - returns data from the database from the CSV
+    - `localhost:3080/data`
+        - OPTIONAL: Query limit - Use a number instead of # to return that many rows, default 5
+        - `localhost:3080/data?limit=#`
+
+# Roadmap
+Features I'd hope to add to follow best practice 
+
+- [ ] Query endpoint for specific rows or columns
+- [ ] Node running within Container 
+- [ ] More Github Actions to the pipeline. E.G. pushing image to release
+- [ ] Mocked tests
+- [ ] More tests
+
