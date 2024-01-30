@@ -5,8 +5,9 @@
   "main": "app.js",
   "scripts": {
     "build": "docker build -t traffic-postgres:latest . && npm i",
-    "test": "jest",
-    "start": "node src/app.js"
+    "dev": "NODE_ENV=development node src/app.js",
+    "start": "docker run --rm -d -p 5432:5432 traffic-postgres:latest && npm run dev",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
